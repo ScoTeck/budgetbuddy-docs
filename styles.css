@@ -1,0 +1,120 @@
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #6b6b6b;
+  --accent: #007AFF;
+  --card: #f7f7f8;
+  --border: #e2e2e5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121212;
+    --fg: #f0f0f0;
+    --muted: #a0a0a0;
+    --accent: #4da3ff;
+    --card: #1c1c1e;
+    --border: #2c2c2e;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+  color: var(--fg);
+  background: var(--bg);
+}
+
+header.page-header {
+  margin-bottom: 2rem;
+}
+
+header.page-header h1 {
+  margin-bottom: 0.25rem;
+  font-size: 1.75rem;
+}
+
+header.page-header .meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+nav.top-nav {
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+nav.top-nav a {
+  color: var(--accent);
+  text-decoration: none;
+  margin-right: 1.25rem;
+}
+
+nav.top-nav a:hover { text-decoration: underline; }
+
+h2 {
+  margin-top: 2.25rem;
+  font-size: 1.3rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.4rem;
+}
+
+h3 {
+  margin-top: 1.5rem;
+  font-size: 1.05rem;
+}
+
+a { color: var(--accent); }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.92rem;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border);
+}
+
+th { background: var(--card); }
+
+blockquote {
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  background: var(--card);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 6px 6px 0;
+  color: var(--muted);
+}
+
+code {
+  background: var(--card);
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.callout {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+}
+
+footer.page-footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
